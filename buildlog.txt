@@ -1,0 +1,72 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/sourceserifpro/METADATA.json /home/travis/build/fontdirectory/sourceserifpro/builds/build
+$ cp -a /home/travis/build/fontdirectory/sourceserifpro/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/sourceserifpro/builds/build
+$ cp -a SourceSerifPro-Regular.ttf.ttx SourceSerifPro-Semibold.ttf.ttx SourceSerifPro-Bold.ttf.ttx SourceSerifPro-Regular.ttf._p_o_s_t.ttx SourceSerifPro-Regular.ttf.B_A_S_E_.ttx SourceSerifPro-Regular.ttf.G_P_O_S_.ttx SourceSerifPro-Regular.ttf._m_a_x_p.ttx SourceSerifPro-Regular.ttf._c_v_t.ttx SourceSerifPro-Regular.ttf._g_a_s_p.ttx SourceSerifPro-Regular.ttf.GlyphOrder.ttx SourceSerifPro-Regular.ttf.G_S_U_B_.ttx SourceSerifPro-Regular.ttf._p_r_e_p.ttx SourceSerifPro-Regular.ttf._h_h_e_a.ttx SourceSerifPro-Regular.ttf._g_l_y_f.ttx SourceSerifPro-Regular.ttf._f_p_g_m.ttx SourceSerifPro-Regular.ttf._n_a_m_e.ttx SourceSerifPro-Regular.ttf._h_e_a_d.ttx SourceSerifPro-Regular.ttf._l_o_c_a.ttx SourceSerifPro-Regular.ttf._h_m_t_x.ttx SourceSerifPro-Regular.ttf.O_S_2f_2.ttx SourceSerifPro-Regular.ttf.D_S_I_G_.ttx SourceSerifPro-Regular.ttf._c_m_a_p.ttx SourceSerifPro-Semibold.ttf._h_m_t_x.ttx SourceSerifPro-Semibold.ttf.O_S_2f_2.ttx SourceSerifPro-Semibold.ttf._h_e_a_d.ttx SourceSerifPro-Semibold.ttf._g_l_y_f.ttx SourceSerifPro-Semibold.ttf._n_a_m_e.ttx SourceSerifPro-Semibold.ttf.D_S_I_G_.ttx SourceSerifPro-Semibold.ttf._p_o_s_t.ttx SourceSerifPro-Semibold.ttf.G_P_O_S_.ttx SourceSerifPro-Semibold.ttf._g_a_s_p.ttx SourceSerifPro-Semibold.ttf._c_v_t.ttx SourceSerifPro-Semibold.ttf._h_h_e_a.ttx SourceSerifPro-Semibold.ttf.G_S_U_B_.ttx SourceSerifPro-Semibold.ttf._f_p_g_m.ttx SourceSerifPro-Semibold.ttf.GlyphOrder.ttx SourceSerifPro-Semibold.ttf._m_a_x_p.ttx SourceSerifPro-Semibold.ttf._l_o_c_a.ttx SourceSerifPro-Semibold.ttf._p_r_e_p.ttx SourceSerifPro-Semibold.ttf._c_m_a_p.ttx SourceSerifPro-Semibold.ttf.B_A_S_E_.ttx SourceSerifPro-Bold.ttf._g_a_s_p.ttx SourceSerifPro-Bold.ttf._c_v_t.ttx SourceSerifPro-Bold.ttf._p_o_s_t.ttx SourceSerifPro-Bold.ttf.B_A_S_E_.ttx SourceSerifPro-Bold.ttf.O_S_2f_2.ttx SourceSerifPro-Bold.ttf._g_l_y_f.ttx SourceSerifPro-Bold.ttf._h_m_t_x.ttx SourceSerifPro-Bold.ttf.G_S_U_B_.ttx SourceSerifPro-Bold.ttf._c_m_a_p.ttx SourceSerifPro-Bold.ttf.G_P_O_S_.ttx SourceSerifPro-Bold.ttf._f_p_g_m.ttx SourceSerifPro-Bold.ttf.GlyphOrder.ttx SourceSerifPro-Bold.ttf._m_a_x_p.ttx SourceSerifPro-Bold.ttf._l_o_c_a.ttx SourceSerifPro-Bold.ttf.D_S_I_G_.ttx SourceSerifPro-Bold.ttf._h_e_a_d.ttx SourceSerifPro-Bold.ttf._p_r_e_p.ttx SourceSerifPro-Bold.ttf._n_a_m_e.ttx SourceSerifPro-Bold.ttf._h_h_e_a.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ fontbakery-check.py upstream-repo sources
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): FAIL
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Regular.ttf.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Semibold.ttf.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Bold.ttf.ttx > fontaine.txt
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+end of pyfontaine process
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+$ fontbakery-check.py upstream-ttx SourceSerifPro-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Regular.ttf.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx SourceSerifPro-Semibold.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Semibold.ttf.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifProSemibold-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ fontbakery-check.py upstream-ttx SourceSerifPro-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Bold.ttf.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/sourceserifpro/builds/build /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Bold.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Regular.ttx /home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifProSemibold-Regular.ttx
+ERROR: BUILD FAILED
+Compiling "/home/travis/build/fontdirectory/sourceserifpro/builds/build/sources/SourceSerifPro-Bold.ttx" to "/home/travis/build/fontdirectory/sourceserifpro/builds/build/SourceSerifPro-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'BASE' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...

@@ -1,0 +1,134 @@
+Fonts
+  All fonts have the same character sets.
+  Font:
+    Common name: Source Serif Pro
+    Sub family: Regular
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2014 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.014;PS Version 1.0;hotconv 1.0.73;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Frank Grießhammer
+    Glyph count: 547
+    Character count: 439
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 12
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: partial
+          Percent coverage: 80
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+  Font:
+    Common name: Source Serif Pro Semibold
+    Sub family: Semibold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2014 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.014;PS Version 1.0;hotconv 1.0.73;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Frank Grießhammer
+    Glyph count: 547
+    Character count: 439
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 12
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: partial
+          Percent coverage: 80
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
+  Font:
+    Common name: Source Serif Pro
+    Sub family: Bold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2014 Adobe Systems Incorporated. All Rights Reserved.
+    License: Copyright 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+    License url: http://www.adobe.com/type/legal.html
+    Version: Version 1.014;PS Version 1.0;hotconv 1.0.73;makeotf.lib2.5.5900
+    Vendor: Adobe Systems Incorporated
+    Vendor url: http://www.adobe.com/type
+    Designer: Frank Grießhammer
+    Glyph count: 547
+    Character count: 439
+    Orthographies:
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 12
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 1
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: partial
+          Percent coverage: 80
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: fragmentary
+          Percent coverage: 23
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: fragmentary
+          Percent coverage: 33
